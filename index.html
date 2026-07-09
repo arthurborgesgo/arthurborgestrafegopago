@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="#07080A" name="theme-color"/>
-<meta content="Suporte Total - Arthur Borges. Gestão de tráfego pago, Google Ads, Meta Ads, Google Meu Negócio, landing pages e performance digital." name="description"/>
+<meta content="Suporte Total - Arthur Borges. Gestão de tráfego pago, Google Ads, Meta Ads, Google Meu Negócio, landing pages, imóveis e performance digital." name="description"/>
 <title>Suporte Total | Arthur Borges - Tráfego Pago &amp; Performance Digital</title>
 <style>
     :root {
@@ -227,6 +227,53 @@
     .card li::before{content:"";width:8px;height:8px;flex:0 0 auto;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan);margin-top:8px}
 
 
+    .imoveis-section{position:relative;overflow:hidden}
+    .imoveis-section::before{
+      content:"";position:absolute;inset:7% -18% auto auto;width:440px;height:440px;border-radius:50%;
+      background:radial-gradient(circle,rgba(0,88,216,.16),transparent 65%);filter:blur(4px);pointer-events:none;
+    }
+    .imoveis-panel{
+      position:relative;z-index:1;border-radius:42px;padding:34px;margin-bottom:22px;
+      display:grid;grid-template-columns:1.04fr .96fr;gap:28px;align-items:center;
+      background:linear-gradient(135deg,rgba(20,33,54,.92),rgba(10,17,29,.88));
+      border:1px solid rgba(8,167,255,.13);
+      box-shadow:0 30px 90px rgba(0,0,0,.44), inset 0 1px 0 rgba(255,255,255,.055);
+    }
+    .imoveis-copy h3{font-size:clamp(30px,4.6vw,54px);line-height:1;letter-spacing:-.06em;margin:12px 0 16px;max-width:720px}
+    .imoveis-copy p{color:#c7d2e6;font-size:17px;line-height:1.65;margin:0 0 24px;max-width:680px}
+    .imoveis-actions{display:flex;gap:14px;flex-wrap:wrap}
+    .property-mockup{
+      min-height:430px;border-radius:30px;padding:18px;overflow:hidden;position:relative;
+      background:linear-gradient(180deg,rgba(245,249,255,.10),rgba(255,255,255,.04));
+      border:1px solid rgba(255,255,255,.10);box-shadow:inset 0 1px 0 rgba(255,255,255,.06);
+    }
+    .property-mockup::before{
+      content:"";position:absolute;inset:18px 18px auto;height:190px;border-radius:22px;
+      background:linear-gradient(135deg,rgba(125,184,255,.34),rgba(0,88,216,.15)), radial-gradient(circle at 70% 30%,rgba(255,255,255,.22),transparent 28%);
+      border:1px solid rgba(255,255,255,.12);
+    }
+    .property-mockup::after{
+      content:"VENDE-SE";position:absolute;top:142px;left:42px;padding:10px 14px;border-radius:999px;
+      background:linear-gradient(135deg,#0A6BFF,#0058D8);color:#fff;font-weight:1000;font-size:12px;letter-spacing:.08em;
+      box-shadow:0 16px 34px rgba(0,88,216,.28);
+    }
+    .property-lines{position:absolute;left:32px;right:32px;top:236px;display:grid;gap:12px}
+    .property-lines span{display:block;height:13px;border-radius:999px;background:rgba(255,255,255,.13)}
+    .property-lines span:nth-child(1){width:78%;height:18px;background:rgba(255,255,255,.22)}
+    .property-lines span:nth-child(2){width:56%}
+    .property-lines span:nth-child(3){width:92%}
+    .property-mini-grid{position:absolute;left:32px;right:32px;bottom:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .property-mini-grid i{height:72px;border-radius:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08)}
+    .imoveis-highlight{border-color:rgba(8,167,255,.22)!important;background:linear-gradient(180deg,rgba(27,45,72,.94),rgba(12,23,39,.90))!important}
+    .imoveis-cta{
+      margin-top:24px;border-radius:34px;padding:30px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;
+      background:linear-gradient(135deg,rgba(0,88,216,.18),rgba(255,255,255,.055));
+      border:1px solid rgba(8,167,255,.14);
+    }
+    .imoveis-cta h3{font-size:clamp(26px,4vw,44px);line-height:1;letter-spacing:-.055em;margin:0 0 10px}
+    .imoveis-cta p{color:#c7d2e6;margin:0;max-width:720px}
+
+
     .template-carousel-section{overflow:hidden}
     .template-carousel-section .section-head p{max-width:520px}
     .template-marquee{
@@ -427,6 +474,9 @@
       .section-head{display:block}
       .section-head p{margin-top:16px}
       .value-band{grid-template-columns:1fr;padding:30px}
+      .imoveis-panel{grid-template-columns:1fr;padding:24px;border-radius:30px}
+      .property-mockup{min-height:390px}
+      .imoveis-cta{grid-template-columns:1fr;padding:24px}
       .footer-grid{grid-template-columns:1fr}
       .mobile-cta{display:block}
       body{padding-bottom:86px}
@@ -783,9 +833,9 @@
 </a>
 <nav aria-label="Navegação principal" class="nav" id="menu">
 <a href="#servicos">Serviços</a>
+<a href="imoveis.html" target="_blank" rel="noopener noreferrer">Imóveis</a>
 <a href="#sobre">Sobre</a>
 <a href="#processo">Processo</a>
-<a href="imoveis.html" target="_blank" rel="noopener noreferrer">Imóveis</a>
 <a href="#faq">FAQ</a>
 </nav>
 <a aria-label="Chamar no WhatsApp" class="btn btn-primary" href="https://wa.me/5591982099096?text=Ol%C3%A1%2C%20Arthur%21%20Quero%20impulsionar%20meu%20neg%C3%B3cio." rel="noopener noreferrer" target="_blank">Impulsionar meu negócio</a>
@@ -832,6 +882,46 @@
 </div>
 </div>
 </section>
+
+<section class="section imoveis-section" id="imoveis">
+<div class="container">
+<div class="section-head reveal">
+<div><span class="pill"><span class="dot"></span>Imóveis</span><h2>Divulgue imóveis na internet e atraia compradores qualificados.</h2></div>
+<p>Uma aba dedicada para proprietários, corretores e imobiliárias que querem vender ou alugar com apresentação profissional e tráfego pago estratégico.</p>
+</div>
+<div class="imoveis-panel reveal">
+<div class="imoveis-copy">
+<span class="pill"><span class="dot"></span>Captação e divulgação imobiliária</span>
+<h3>Seu imóvel com presença forte no digital.</h3>
+<p>Crio anúncios, páginas e campanhas para apresentar imóveis de forma profissional, gerar contatos pelo WhatsApp e aumentar as chances de venda ou locação com mais velocidade.</p>
+<div class="imoveis-actions">
+<a class="btn btn-primary" href="https://wa.me/5591982099096?text=Ol%C3%A1%2C%20Arthur%21%20Quero%20anunciar%20um%20im%C3%B3vel%20na%20internet." rel="noopener noreferrer" target="_blank">Anunciar meu imóvel</a>
+<a class="btn btn-secondary" href="imoveis.html" target="_blank" rel="noopener noreferrer">Ver vitrine de imóveis</a>
+</div>
+</div>
+<div aria-hidden="true" class="property-mockup">
+<div class="property-lines"><span></span><span></span><span></span></div>
+<div class="property-mini-grid"><i></i><i></i><i></i></div>
+</div>
+</div>
+<div class="grid cards-3">
+<article class="card glass reveal imoveis-highlight"><h3>Captação de imóveis</h3><p>Comunicação para proprietários que querem anunciar com suporte profissional.</p><ul><li>Copy para oferta imobiliária</li><li>CTA direto para WhatsApp</li><li>Apresentação limpa e confiável</li></ul></article>
+<article class="card glass reveal"><h3>Anúncios para compradores</h3><p>Campanhas em Meta Ads para alcançar pessoas com interesse em imóveis na região.</p><ul><li>Segmentação local</li><li>Criativos para feed e stories</li><li>Leads mais qualificados</li></ul></article>
+<article class="card glass reveal"><h3>Página do imóvel</h3><p>Landing page para mostrar fotos, localização, detalhes, benefícios e botão de contato.</p><ul><li>Design responsivo</li><li>Informações organizadas</li><li>Botão de atendimento rápido</li></ul></article>
+<article class="card glass reveal"><h3>Divulgação em carrossel</h3><p>Estrutura visual para apresentar imóveis em sequência, ideal para Instagram e Facebook.</p><ul><li>Primeira imagem forte</li><li>Destaques do imóvel</li><li>Chamada para contato</li></ul></article>
+<article class="card glass reveal"><h3>Gestão da campanha</h3><p>Acompanhamento dos resultados para entender custo por contato e ajustar a estratégia.</p><ul><li>Leitura de dados</li><li>Otimização de orçamento</li><li>Relatório objetivo</li></ul></article>
+<article class="card glass reveal"><h3>Parceria com corretores</h3><p>Estrutura para corretores que querem captar imóveis e apresentar anúncios com autoridade.</p><ul><li>Posicionamento profissional</li><li>Comunicação local</li><li>Suporte durante a campanha</li></ul></article>
+</div>
+<div class="imoveis-cta glass reveal">
+<div>
+<h3>Quer anunciar um imóvel?</h3>
+<p>Envie as informações do imóvel no WhatsApp e eu organizo a melhor forma de apresentar ele no digital.</p>
+</div>
+<a class="btn btn-primary" href="https://wa.me/5591982099096?text=Ol%C3%A1%2C%20Arthur%21%20Quero%20anunciar%20um%20im%C3%B3vel%20na%20internet." rel="noopener noreferrer" target="_blank">Falar sobre imóveis</a>
+</div>
+</div>
+</section>
+
 <section class="section template-carousel-section" id="templates">
 <div class="container">
 <div class="section-head reveal">
@@ -998,7 +1088,7 @@
 </div>
 <div>
 <h3>Serviços</h3>
-<div class="footer-links"><a href="#servicos">Meta Ads</a><a href="#servicos">Google Ads</a><a href="#servicos">Google Meu Negócio</a><a href="#servicos">Landing Pages</a></div>
+<div class="footer-links"><a href="#servicos">Meta Ads</a><a href="#servicos">Google Ads</a><a href="#servicos">Google Meu Negócio</a><a href="#servicos">Landing Pages</a><a href="imoveis.html" target="_blank" rel="noopener noreferrer">Imóveis</a></div>
 </div>
 <div>
 <h3>Contato</h3>
